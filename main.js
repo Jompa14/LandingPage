@@ -15,7 +15,6 @@ function showTime() {
  document.getElementById("time").innerHTML = `${addZero(hour)}<span>:</span>${addZero(minute)}`;
  
  setTimeout(showTime, 1000);
- console.log("hello");
  }
  
  //add Zeros
@@ -39,11 +38,11 @@ function showTime() {
   }   else ()
   document.body.style.backgroundImage = "/home/jompa/LandingPage/images/city.jpeg";
   greeting.textContent = "Good evening";
-  
+ }
  }
  
  //Run
  
- moment();
+ showTime();
  setBgGreeting();
  
