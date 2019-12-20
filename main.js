@@ -29,19 +29,25 @@ function setBgGreet() {
   let today = new Date(),
     hour = today.getHours();
 
-  if (hour < 12) {
+ if (hour < 6) {
+    // night
+    document.body.style.backgroundImage = "url('images/night.png')";
+    document.body.style.backgroundSize="100% 100%";
+    greeting.textContent = 'Good night, ';
+  } if (hour < 13) {
     // Morning
     document.body.style.backgroundImage = "url('https://i.ibb.co/7vDLJFb/morning.jpg')";
     greeting.textContent = 'Good Morning, ';
   } else if (hour < 18) {
     // Afternoon
-    document.body.style.backgroundImage = "url('https://i.ibb.co/3mThcXc/afternoon.jpg')";
+    document.body.style.backgroundImage = "url('images/chima.jpeg')";
+    document.body.style.backgroundSize="100% 100%";
     greeting.textContent = 'Good Afternoon, ';
   } else {
     // Evening
-   document.body.style.backgroundImage = "url('images/night.png')";
-   document.body.style.backgroundSize="100% 100%";
-   greeting.textContent = 'Good Evening, ';
+    document.body.style.backgroundImage = "url('images/night.png')";
+    document.body.style.backgroundSize="100% 100%";
+    greeting.textContent = 'Good Evening, ';
   }
 }
 
