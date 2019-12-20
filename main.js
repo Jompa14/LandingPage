@@ -39,8 +39,9 @@ function setBgGreet() {
     greeting.textContent = 'Good Afternoon, ';
   } else {
     // Evening
-    document.body.style.backgroundImage = "images/nightlight.jpeg";
-    greeting.textContent = 'Good Evening, ';
+   document.body.style.backgroundImage = "url('images/night.png')";
+   document.body.style.backgroundSize="100% 100%";
+   greeting.textContent = 'Good Evening, ';
   }
 }
 
