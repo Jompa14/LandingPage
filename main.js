@@ -34,7 +34,7 @@ function setBgGreet() {
     document.body.style.backgroundImage = "url('images/night.png')";
     document.body.style.backgroundSize="100% 100%";
     greeting.textContent = 'Good night, ';
-  } if (hour < 13) {
+  } else if (hour < 13) {
     // Morning
     document.body.style.backgroundImage = "url('https://i.ibb.co/7vDLJFb/morning.jpg')";
     greeting.textContent = 'Good Morning, ';
